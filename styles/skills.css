@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 
+Author: Ewan Baxter
+Date: April 16th, 2022
+*/
+@import url("reset.css");
+@import url("base.css");
+
+h1 {
+    margin-bottom: 0;
+}
+
+div#skills-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+img.skill-icon {
+    max-height: 40%;
+    max-width: 20%;
+}
+
+div.skill {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 999px;
+    box-shadow: 10px 10px 5px gray;
+    padding: 2em;
+    text-align: center;
+    width: 400px;
+    height: fit-content;
+    margin: 3em;
+}
+
+div.skill h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+}

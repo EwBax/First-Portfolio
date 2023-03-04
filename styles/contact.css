@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 
+Author: Ewan Baxter
+Date: April 16th, 2022
+*/
+@import url("reset.css");
+@import url("base.css");
+@import url("forms.css");
+
+section#contact-info {
+    text-align: center;
+}
+
+
+section#contact-info img {
+    width: 2em;
+}

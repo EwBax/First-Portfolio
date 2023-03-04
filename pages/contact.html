@@ -1,0 +1,86 @@
+<!-- 
+Author: Ewan Baxter
+Date: April 16th, 2022
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewan Baxter - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <input type="checkbox" id="mobile-menu">
+            <label for="mobile-menu">
+                <img src="../icons/hamburger_icon.png" alt="hamburger icon" id="hamburger">
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./goals.html">Goals</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./resume.html">Resumé</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <section id="contact-info">
+            <h1>Contact Info</h1>
+            <p>You can contact me via any of these methods, or the form below:</p>
+            <br>
+            <p>Phone: (902) 221-7782</p>
+            <br>
+            <p>Email: ewan@toughbaxter.com</p>
+            <br>
+            <div>
+                <a href="https://www.linkedin.com/in/ewanbaxter/"><img src="../icons/linkedIn_icon.png"
+                        alt="LinkedIn"></a>
+                &nbsp;
+                <a href="https://github.com/EwBax"><img src="../icons/github_icon.png" alt="Github"></a>
+            </div>
+        </section>
+
+        <!-- Source: https://medium.com/@egwuchinedu69/ ...  -->
+        <div class="contactForm">
+            <h2>Contact Me</h2>
+            <form action="POST" name="contact" data-netlify="true">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="FirstName" placeholder="Your first name..." required>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="LastName" placeholder="Your last name..." required>
+                <label for="email">Email Address</label>
+                <input type="email" name="Email" id="email" placeholder="Your email address..." required>
+                <label for="message">Message</label>
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Write a message..."
+                    required></textarea>
+                <fieldset>
+                    <legend>More Info</legend>
+                    <label for="connection">How did you find my site?</label>
+                    <select name="Connection" id="connection">
+                        <option value="Referral">Referral</option>
+                        <option value="Direct">Direct</option>
+                        <option value="Search">Search Engine</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="rating">How do you rate your interaction with my site?</label>
+                    <input type="range" name="Rating" id="rating" min="0" max="10">
+                </fieldset>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>

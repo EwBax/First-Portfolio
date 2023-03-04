@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* 
+Author: Ewan Baxter
+Date: April 16th, 2022
+*/
+
+@import url("reset.css");
+@import url("base.css");
+
+div#resume-body {
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px gray;
+    color: #706f6f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    height: 110vw;
+    margin: 2em auto;
+    width: 85vw;
+}
+
+h1 {
+    color: #464a4e;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: .2em;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+h2 {
+    color: #464a4e;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+div#resume-content {
+    align-items: center;
+    border-top: 1px solid #a6a6a6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 85%;
+    margin: auto;
+    width: 80%;
+}
+
+div#resume-left {
+    border-right: 1px solid #a6a6a6;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 92.5%;
+    padding-right: 10%;
+    width: 90%;
+}
+
+div.section-heading {
+    background-color: #ededed;
+    letter-spacing: 0.2em;
+    padding: 0.75em 2.5em;
+    margin-bottom: 1.4em;
+    width: fit-content;
+}
+
+div.not-top-section {
+    margin-top: 1.4em;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: .9em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+h4 {
+    color: #464a4e;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+div#resume-body p {
+    line-height: 1.5em;
+}
+
+div#resume-body ul {
+    font-size: 0.95em;
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1.75em;
+}
+
+span.italicize {
+    font-style: italic;
+}
+
+div#resume-right {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    height: 92.5%;
+    margin-left: auto;
+    width: 90%;
+}
+
+section#contact, section#summary, section#education {
+    border-bottom: #a6a6a6 solid 1px;
+}
+
+div#resume-right p, div#resume-right ul {
+    font-size: 0.925em;
+}

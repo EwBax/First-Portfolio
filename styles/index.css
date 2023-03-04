@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* 
+Author: Ewan Baxter
+Date: April 16th, 2022
+*/
+@import url("reset.css");
+@import url("base.css");
+
+body {
+    height: 200vh;
+}
+
+div#home-page {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+div#first-page {
+    display: grid;
+    height: 100vh;
+}
+
+section#name-title {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+h1 {
+    align-self: flex-end;
+}
+
+section#name-title h2 {
+    font-size: 2em;
+}
+
+img#ewan-pic {
+    align-self: flex-end;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+div#second-page {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+}
+
+section#about-me {
+    align-items: center;
+    height: 100%;
+    justify-items: center;
+    margin: auto;
+    width: 75%;
+}
+
+section#about-me h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+/*
+---------------------
+    mobile styles
+---------------------
+*/
+
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        height: 180vh;
+    }
+
+    div#home-page {
+        position: relative;
+        top: 10vh;
+        height: 180vh;
+    }
+
+
+    div#first-page {
+        grid-template-rows: 1fr 1fr;
+        height: 90vh;
+    }
+
+    div#second-page {
+        height: 90vh;
+    }
+
+    section#name-title {
+        grid-template-rows: 2fr 1fr;
+    }
+
+    section#name-title h1 {
+        justify-self: center;
+        align-self: flex-end;
+        margin: 0;
+    }
+
+    section#name-title h2 {
+        font-size: 1.25em;
+    }
+
+
+    section#about-me h2, section#about-me p {
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    section#about-me p {
+        font-size: 5vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) {
+    div#first-page {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img#ewan-pic {
+        grid-column: 2;
+    }
+
+    section#about-me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* 
+Author: Ewan Baxter
+Date: April 16th, 2022
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5em;
+}
+
+div.main-content {
+    height: 100%;
+    position: relative;
+    top: 5em;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* 
+---------------------------------
+        NavBar styling 
+---------------------------------
+*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+input#mobile-menu, img#hamburger {
+    display: none;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid black;
+    color: black;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5em;
+}
+
+nav.top-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+nav.top-nav ul a {
+    border-radius: 15px;
+    flex-shrink: 1;
+    padding: 1em;
+}
+
+nav.top-nav ul a:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* 
+-------------------------------
+    Mobile Styling
+-------------------------------
+*/
+
+@media only screen and (max-width: 480px) {
+    div.main-content {
+        top: 10vh;
+    }
+
+
+    header {
+        height: 10vh;
+    }
+
+    nav.top-nav {
+        display: block;
+        padding: 3vh;
+    }
+
+    nav.top-nav ul {
+        display: none;
+    }
+
+    input#mobile-menu {
+        display: contents;
+    }
+
+    img#hamburger {
+        display: inline-block;
+        width: 10%;
+    }
+
+    nav.top-nav label {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav.top-nav li {
+        margin: 1em 0.5em;
+    }
+
+    input#mobile-menu:checked~ul {
+        background-color: #ffffff;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        margin-left: auto;
+        z-index: 2;
+    }
+
+}
